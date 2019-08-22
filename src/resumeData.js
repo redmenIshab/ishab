@@ -1,106 +1,117 @@
 let resumeData = {
-  "imagebaseurl":"https://techonoeticsclub.github.io/",
-  "name": "John Doe",
-  "role": "Frontend Developer",
-  "linkedinId":"Your LinkedIn Id",
-  "skypeid": "Your skypeid",
-  "roleDescription": "I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.",
-  "socialLinks":[
-      {
-        "name":"linkedin",
-        "url":"https://www.linkedin.com/",
-        "className":"fa fa-linkedin"
-      },
-      {
-        "name":"github",
-        "url":"http://github.com/",
-        "className":"fa fa-github"
-      },
-      {
-        "name":"skype",
-        "url":"http://skype.com",
-        "className":"fa fa-skype"
-      }
-    ],
-  "aboutme":"I have finished my B.E. in Computer Science and have been working in industry for past few years.",
-  "address":"India",
-  "website":"https://www.codeclassifiers.com",
-  "education":[
+  imagebaseurl: "https://techonoeticsclub.github.io/",
+  name: "Ishab Acharya",
+  role: "Mobile Enginner",
+  linkedinId: "ishabacharya",
+  gmailId: "ishabachary@gmail.com",
+  // skypeid: "Your skypeid",
+  roleDescription:
+    "I love  expoloring new technology and working on my side projects to increase my calibre, confidence and creativity. My passion outside screens are playing football, cycling, travelling, photography and bodybuilding.",
+  socialLinks: [
     {
-      "UniversityName":"Mumbai University",
-      "specialization":"Some specialization",
-      "MonthOfPassing":"Jan",
-      "YearOfPassing":"2018",
-      "Achievements":"Some Achievements"
+      name: "linkedin",
+      url: "https://www.linkedin.com/in/ishabacharya/",
+      className: "fa fa-linkedin"
     },
     {
-      "UniversityName":"Some University",
-      "specialization":"Some specialization",
-      "MonthOfPassing":"Jan",
-      "YearOfPassing":"2018",
-      "Achievements":"Some Achievements"
+      name: "github",
+      url: "http://github.com/ishabacharya",
+      className: "fa fa-github"
+    },
+    {
+      name: "skype",
+      url: "https://join.skype.com/invite/kletBM3I7BGV",
+      className: "fa fa-skype"
     }
   ],
-  "work":[
+  aboutme: "I have completed my Bachelors in Software Engineering in 2019.",
+  address: "Nepal",
+  website: "ishabachary@gmail.com",
+  education: [
     {
-      "CompanyName":"Some Company",
-      "specialization":"Some specialization",
-      "MonthOfLeaving":"Jan",
-      "YearOfLeaving":"2018",
-      "Achievements":"Some Achievements"
+      UniversityName: "Pokhara University",
+      specialization: "Software Engineering",
+      MonthOfPassing: "March",
+      YearOfPassing: "2019",
+      Achievements: "Faculty university topper in three semesters"
     },
     {
-      "CompanyName":"Some Company",
-      "specialization":"Some specialization",
-      "MonthOfLeaving":"Jan",
-      "YearOfLeaving":"2018",
-      "Achievements":"Some Achievements"
+      UniversityName: "White House Int'l College",
+      specialization: "Physics",
+      MonthOfPassing: "March",
+      YearOfPassing: "2014",
+      Achievements: "Super 30 scholarships"
     }
   ],
-  "skillsDescription":"Your skills here",
-  "skills":[
+  work: [
     {
-      "skillname":"HTML5"
+      CompanyName: "WS-codelabs",
+      specialization: "Jr.React-Native Developer",
+      MonthOfLeaving: "Mar",
+      YearOfLeaving: "2018",
+      Achievements: "Changing XD and sketch files to mobile app designs."
     },
     {
-      "skillname":"CSS"
+      CompanyName: "Theme Nepal",
+      specialization: "React Native Developer",
+      MonthOfLeaving: "Jan",
+      YearOfLeaving: "2019",
+      Achievements: "Solo React Native developer to make iOS/android apps."
     },
     {
-      "skillname":"Reactjs"
+      CompanyName: "Outlines Research and Development",
+      specialization: "Sr.React Native Developer",
+      MonthOfLeaving: "July",
+      YearOfLeaving: "2019",
+      Achievements:
+        "Solo React Native developer to make iOS/android apps. Along side testing and bug fixes of existing apps."
     }
   ],
-  "portfolio":[
+  skillsDescription: "Professional skills",
+  skills: [
     {
-      "name":"project1",
-      "description":"mobileapp",
-      "imgurl":"images/portfolio/phone.jpg"
+      skillname: "React Native"
     },
     {
-      "name":"project2",
-      "description":"mobileapp",
-      "imgurl":"images/portfolio/project.jpg"
+      skillname: "Node JS"
     },
     {
-      "name":"project3",
-      "description":"mobileapp",
-      "imgurl":"images/portfolio/project2.png"
-    },
-    {
-      "name":"project4",
-      "description":"mobileapp",
-      "imgurl":"images/portfolio/phone.jpg"
+      skillname: "Sketch App"
     }
   ],
-  "testimonials":[
+  portfolio: [
     {
-      "description":"This is a sample testimonial",
-      "name":"Some technical guy"
+      name: "Dr.Transfer",
+      description: "mobileapp",
+      imgurl: "images/portfolio/phone.jpg"
     },
     {
-      "description":"This is a sample testimonial",
-      "name":"Some technical guy"
+      name: "Merobill",
+      description: "mobileapp",
+      imgurl: "images/portfolio/project.jpg"
+    },
+    {
+      name: "Gameday",
+      description: "mobileapp",
+      imgurl: "images/portfolio/project2.png"
+    },
+    {
+      name: "Classibazaar",
+      description: "mobileapp",
+      imgurl: "images/portfolio/phone.jpg"
     }
+  ],
+  testimonials: [
+    {
+      description:
+        "He did really good in his studies and along side he build his career. Ishab was always an insipiring lead among his friends had all the qualities to be a future leader and innovator. Wish him luck !",
+      name: "Birendra Bista (HOD S.E NCIT)"
+    }
+    // {
+    //   description: "This is a sample testimonial",
+    //   name: "Some technical guy"
+    // }
   ]
-}
+};
 
-export default resumeData
+export default resumeData;

@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "ajv": "^6.5.4",
-    "url-parse": "^1.4.3"
+    "url-parse": "^1.5.0"
   },
   "homepage": "https://ishabacharya.github.io/ishab"
 }

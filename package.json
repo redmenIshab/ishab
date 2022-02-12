@@ -18,7 +18,7 @@
     "predeploy": "npm run build"
   },
   "devDependencies": {
-    "ajv": "^6.5.4",
+    "ajv": "^6.12.3",
     "url-parse": "^1.4.3"
   },
   "homepage": "https://ishabacharya.github.io/ishab"

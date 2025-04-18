@@ -1,28 +1,23 @@
 let resumeData = {
   imagebaseurl: "https://techonoeticsclub.github.io/",
-  name: "Ishab Acharya",
-  role: "Mobile Enginner",
-  linkedinId: "ishabacharya",
-  gmailId: "ishabachary@gmail.com",
+  name: "Redmen Ishab",
+  role: "Lead Engineer",
+  linkedinId: "redmenIshab",
+  gmailId: "redmenishab@gmail.com",
   // skypeid: "Your skypeid",
   roleDescription:
-    "I love  expoloring new technology and working on my side projects to increase my calibre, confidence and creativity. My passion outside screens are playing football, cycling, travelling, photography and bodybuilding.",
+    "With my 6+ years engineering journey, I've discovered that mastering both technical and people skills is what truly sets senior engineers and leaders apart.\nThe hard skills are the foundation.With deep expertise in system design to build scalable architectures. I've tackled complex database optimization challenges that improved server performance by 40%. Working with AWS, CI/CD pipelines, and Kubernetes taught me how critical modern cloud infrastructure is for delivering reliable solutions.\nBut here's what most engineers overlook and I did too (learned it in a hardway): technical excellence alone isn't enough. Leading engineering teams taught me that soft skills drive the biggest impact. Clear communication helps align stakeholders. Strong mentorship accelerates junior developers' growth. Effective problem-solving and collaboration turn challenging projects into successful deployments.\nI learned this firsthand while building a hospitality tech startup. My technical skills helped architect the solution, but it was the ability to prioritize features, manage competing demands, and guide the team that brought vision to life.",
   socialLinks: [
     {
       name: "linkedin",
-      url: "https://www.linkedin.com/in/ishabacharya/",
+      url: "https://www.linkedin.com/in/redmenIshab/",
       className: "fa fa-linkedin"
     },
     {
       name: "github",
-      url: "http://github.com/ishabacharya",
+      url: "http://github.com/redmenIshab",
       className: "fa fa-github"
     },
-    {
-      name: "skype",
-      url: "https://join.skype.com/invite/kletBM3I7BGV",
-      className: "fa fa-skype"
-    }
   ],
   aboutme: "I have completed my Bachelors in Software Engineering in 2019.",
   address: "Nepal",
@@ -32,8 +27,8 @@ let resumeData = {
       UniversityName: "Pokhara University",
       specialization: "Software Engineering",
       MonthOfPassing: "March",
-      YearOfPassing: "2019",
-      Achievements: "Faculty university topper in three semesters"
+      YearOfPassing: "2020",
+      Achievements: "Faculty university topper"
     },
     {
       UniversityName: "White House Int'l College",
@@ -45,39 +40,70 @@ let resumeData = {
   ],
   work: [
     {
-      CompanyName: "WS-codelabs",
-      specialization: "Jr.React-Native Developer",
-      MonthOfLeaving: "Mar",
-      YearOfLeaving: "2018",
-      Achievements: "Changing XD and sketch files to mobile app designs."
+      CompanyName: "Nepal Music Festival",
+      specialization: "VP of IT and Communication",
+      Achievements: `- Oversee IT infrastructure strategy, including ticketing platforms, festival websites, mobile apps, and cybersecurity.
+- Collaborate with marketing teams to implement data-driven campaigns, analytics tools, and automation for personalized attendee experiences.
+- Manage internal and external communication systems, ensuring seamless collaboration and public-facing messaging during festivals.
+- Lead client handling, vendor relations, and contract documentation, ensuring compliance with legal and data privacy standards.
+- Drive innovation by adopting emerging technologies to enhance the attendee experience and operational efficiency.
+- Develop budgets, lead IT and communication teams, and ensure alignment with organizational goals.`
     },
     {
-      CompanyName: "Theme Nepal",
-      specialization: "React Native Developer",
-      MonthOfLeaving: "Jan",
-      YearOfLeaving: "2019",
-      Achievements: "Solo React Native developer to make iOS/android apps."
+      CompanyName: "Leapfrog Technology",
+      specialization: "Full Stack | Senior Engineer",
+      MonthOfLeaving: "April",
+      YearOfLeaving: "2025",
+      Achievements:`- Design Principle, Design Thinking and Design Pattern implementation
+- Security Controls Implementation ensuring that encryption, access controls, authentication mechanisms, and other security measures are properly implemented.
+- Incident Response and Monitoring implementing intrusion detection systems, monitoring logs and network traffic and reporting as they happen.
+- Collaboration and Communication ensuring clients requirements are thoroughly understood and met through communicating security risks, incidents, and mitigation strategies with-in cross-functional teams.`
     },
     {
-      CompanyName: "Outlines Research and Development",
-      specialization: "Sr.React Native Developer",
-      MonthOfLeaving: "July",
-      YearOfLeaving: "2019",
-      Achievements:
-        "Solo React Native developer to make iOS/android apps. Along side testing and bug fixes of existing apps."
-    }
+      CompanyName: "Nepal College Of Information Technology",
+      specialization: "Assitant Lecturer",
+      MonthOfLeaving: "Aug",
+      YearOfLeaving: "2022",
+      Achievements:`- Lecturer in C- Programming
+- Bootcamps and training in Git and Web Development
+- Advance trainings on  Node, React-Native
+- Career counseling and helping students to bridge educational  knowledge to their career path.` 
+    },
+    {
+      CompanyName: "Software Factory",
+      specialization: "CTO / Director",
+      MonthOfLeaving: "March",
+      YearOfLeaving: "2022",
+      Achievements:`- Technical Lead for a startup in the hospitality sector
+- Market research data analysis and product development planning and strategy building
+- Decision making for  the best technical practices and right tools selection for the product and the team
+- Creating and maintaining a highly motivational environment and helping to bring the best out of individual members
+- Adapt to rapid development and release of the system complying continuous update in the requirements
+- Ensuring usage of  proper design tools, design patterns and standing coding practices with the right set of tools for testing and automation.
+- Customer and Business meetings, requirement gathering, cracking deals and agreements with clients` 
+    },
   ],
   skillsDescription: "Professional skills",
   skills: [
     {
-      skillname: "React Native"
+      skillname: "JavaScript"
     },
     {
-      skillname: "Node JS"
+      skillname: "Go Programming Language"
     },
     {
-      skillname: "Sketch App"
-    }
+      skillname: "C#"
+    },
+    {
+      skillname: "Agile and Project Management"
+    },
+    
+    {
+      skillname: "Blockchain"
+    },
+    {
+      skillname: "Generative AI and Computer Vision"
+    },
   ],
   portfolio: [
     {
@@ -104,8 +130,8 @@ let resumeData = {
   testimonials: [
     {
       description:
-        "He did really good in his studies and along side he build his career. Ishab was always an insipiring lead among his friends had all the qualities to be a future leader and innovator. Wish him luck !",
-      name: "Birendra Bista (HOD S.E NCIT)"
+        "Ishab's good morale and studies  and his insipiring leadership characteristics across various activities among his friends had all the qualities to be a future leader and better person. Wish him luck !",
+      name: "Birendra Bista (HOD. NCIT)"
     }
     // {
     //   description: "This is a sample testimonial",

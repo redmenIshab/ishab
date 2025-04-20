@@ -19,7 +19,7 @@ export default class Footer extends Component {
                 })}
             </ul>
             <ul className="copyright">
-              <li>© Copyright 2014 Ishab</li>
+              <li>© Copyright 2014 Software Factory Pvt. Ltd</li>
               {/* <li>
                 Design by{" "}
                 <a title="Styleshout" href="http://www.styleshout.com/">

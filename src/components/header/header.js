@@ -1,6 +1,14 @@
 import React, { Component } from "react";
 import Particles from "react-particles-js";
+
 export default class Header extends Component {
+     handleDownload() {
+      const link = document.createElement("a");
+      link.href = "../../../CV.pdf";
+      link.download = "Redmen_CV.pdf";
+      link.click();
+  }
+
   render() {
     let resumeData = this.props.resumeData;
     return (
@@ -15,6 +23,11 @@ export default class Header extends Component {
               Hide navigation
             </a>
             <ul id="nav" className="nav">
+              <li>
+              <button onClick={()=>this.handleDownload()}>
+                Download CV
+              </button>
+               </li>
               <li className="current">
                 <a className="smoothscroll" href="#home">
                   Home
@@ -52,7 +65,7 @@ export default class Header extends Component {
             <div className="banner-text">
               <h1 className="responsive-headline">I am {resumeData.name}.</h1>
               <h3>
-                I am a {resumeData.role}.{resumeData.roleDescription}
+                 {resumeData.role}.{resumeData.roleDescription}
               </h3>
               <hr />
               <ul className="social">
@@ -60,13 +73,14 @@ export default class Header extends Component {
                   resumeData.socialLinks.map(item => {
                     return (
                       <li key={item.name}>
-                        <a href={item.url} target="_blank">
+                        <a href={item.url} target="_blank" rel="noopener noreferrer">
                           <i className={item.className} />
                         </a>
                       </li>
                     );
                   })}
               </ul>
+
             </div>
           </div>
 

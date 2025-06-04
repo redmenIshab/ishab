@@ -4,7 +4,7 @@ import Particles from "react-particles-js";
 export default class Header extends Component {
      handleDownload() {
       const link = document.createElement("a");
-      link.href = "../../../CV.pdf";
+      link.href = "../../../cv.pdf";
       link.download = "Redmen_CV.pdf";
       link.click();
   }

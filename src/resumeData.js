@@ -25,6 +25,11 @@ let resumeData = {
   website: "ishab.medium.com",
   education: [
     {
+      UniversityName: "Purbanchal University",
+      specialization: "Masters In Information Technology",
+      YearOfPassing: "2025 - 2027",
+    },
+    {
       UniversityName: "Pokhara University",
       specialization: "Software Engineering",
       MonthOfPassing: "March",
@@ -125,22 +130,12 @@ let resumeData = {
       {
         "name": "Restaurant Management and POS System",
         "description": "Hospitality SaaS backend & POS",
-        "webURL": "https://sathifood.com/pos" 
-      },
-      {
-        "name": "Sathi Food Delivery App",
-        "description": "Food delivery ecosystem (User, Rider, Restaurant)",
-        "webURL": "https://sathifood.com"
+        "webURL": "https://softwarefactory.vercel.app" 
       },
       {
         "name": "Cryptocurrency Wallet and Exchange Platform",
         "description": "Crypto wallet and trading DApp",
         "webURL": "https://xcelpay.io"
-      },
-      {
-        "name": "Merobill",
-        "description": "Utility payment app for Nepali diaspora",
-        "webURL": "https://www.merobill.com/"
       }
     ], 
   testimonials: [

@@ -665,7 +665,7 @@ a {
 
   .page-shell {
     width: calc(100% - 1rem);
-    padding-top: 25rem;
+    padding-top: 5rem;
   }
 
   .hero-shell {

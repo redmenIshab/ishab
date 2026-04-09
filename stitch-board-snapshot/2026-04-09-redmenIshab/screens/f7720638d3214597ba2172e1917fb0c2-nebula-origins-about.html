@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NEBULA_OS | PHILOSOPHY</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,700;1,400&amp;family=Fira+Code:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#232a36",
+                        "on-secondary": "#00363e",
+                        "on-primary-container": "#ede0ff",
+                        "on-background": "#dce3f2",
+                        "on-primary-fixed-variant": "#5a00c6",
+                        "surface-container": "#19202b",
+                        "secondary-fixed-dim": "#2fd9f4",
+                        "inverse-surface": "#dce3f2",
+                        "surface-tint": "#d2bbff",
+                        "on-surface": "#dce3f2",
+                        "outline-variant": "#4a4455",
+                        "primary-fixed-dim": "#d2bbff",
+                        "tertiary": "#ffb95f",
+                        "on-primary": "#3f008e",
+                        "error-container": "#93000a",
+                        "surface-bright": "#323a46",
+                        "tertiary-fixed-dim": "#ffb95f",
+                        "outline": "#958da1",
+                        "on-error": "#690005",
+                        "background": "#0c141e",
+                        "secondary-fixed": "#a2eeff",
+                        "primary-fixed": "#eaddff",
+                        "on-secondary-container": "#00515d",
+                        "on-primary-fixed": "#25005a",
+                        "primary": "#d2bbff",
+                        "inverse-primary": "#732ee4",
+                        "surface-container-highest": "#2e3541",
+                        "surface": "#0c141e",
+                        "on-tertiary-container": "#ffe1c0",
+                        "on-surface-variant": "#ccc3d8",
+                        "on-tertiary-fixed": "#2a1700",
+                        "error": "#ffb4ab",
+                        "surface-variant": "#2e3541",
+                        "inverse-on-surface": "#29313c",
+                        "on-error-container": "#ffdad6",
+                        "secondary": "#5de6ff",
+                        "tertiary-container": "#905b00",
+                        "on-secondary-fixed": "#001f25",
+                        "on-secondary-fixed-variant": "#004e5a",
+                        "tertiary-fixed": "#ffddb8",
+                        "on-tertiary": "#472a00",
+                        "secondary-container": "#00cbe6",
+                        "surface-container-low": "#151c27",
+                        "surface-container-lowest": "#070e19",
+                        "primary-container": "#7c3aed",
+                        "surface-dim": "#0c141e",
+                        "on-tertiary-fixed-variant": "#653e00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Fira Code"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(25, 32, 43, 0.6);
+            backdrop-filter: blur(20px) saturate(150%);
+            border: 1px solid rgba(149, 141, 161, 0.15);
+        }
+        .nebula-glow {
+            background: radial-gradient(circle at 50% 50%, rgba(124, 58, 237, 0.15) 0%, transparent 70%);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #0c141e;
+            overflow-x: hidden;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-8 h-20 max-w-[100vw] bg-[#19202b]/60 backdrop-blur-xl shadow-[0_0_40px_rgba(124,58,237,0.08)]">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-violet-400 dark:text-violet-300 text-3xl">rocket_launch</span>
+<span class="text-2xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-cyan-400 drop-shadow-[0_0_10px_rgba(124,58,237,0.5)] font-headline uppercase">NEBULA_OS</span>
+</div>
+<nav class="hidden md:flex items-center gap-8 font-headline tracking-[0.1em] uppercase text-sm">
+<a class="text-slate-400 hover:text-violet-300 transition-colors duration-500" href="#">TERMINAL</a>
+<a class="text-cyan-400 font-bold border-b-2 border-cyan-400 pb-1" href="#">PHILOSOPHY</a>
+<a class="text-slate-400 hover:text-violet-300 transition-colors duration-500" href="#">SYSTEMS</a>
+<a class="text-slate-400 hover:text-violet-300 transition-colors duration-500" href="#">SIGNAL_LOG</a>
+</nav>
+<button class="text-violet-400 hover:bg-white/5 p-2 rounded-full transition-all">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main class="relative pt-32 pb-24 px-6 md:px-12 lg:px-24">
+<!-- Nebula Background Elements -->
+<div class="fixed inset-0 pointer-events-none z-[-1]">
+<div class="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] bg-primary/10 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-[10%] left-[-10%] w-[500px] h-[500px] bg-secondary/5 rounded-full blur-[100px]"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full opacity-30" data-alt="Deep space nebula with swirling violet and cyan cosmic dust, ethereal starlight, and atmospheric volumetric lighting textures" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD_Thw1CsSciJLTU4vvsbZUyvbvJvpvmMvmrPYtlx7Jpdn84q78w_wfSgms8-IiWLloc2P6eNPueQiTmgsu2KucSSB3c5uk7VjIvtHDpNW1kidd0XixWPocnBymLMnXPlrs4svvTSwl7fYoNbXZH2WCyPXkGoOaVWoCJ5xKmH7cSG59eWYd8WmgB9aJ7raZty1AzmhtRRSS1bgxZgZsKJ_bAUCCJaiyvgNPjwhwvNIQSQaRwY5SGfGgEEJrRhRSNkNqY4q4HHq6QRUC'); background-size: cover; mix-blend-mode: overlay;"></div>
+</div>
+<!-- Hero Section: The Mission -->
+<section class="max-w-6xl mx-auto mb-32 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 space-y-8">
+<div class="space-y-4">
+<p class="font-label text-secondary tracking-[0.3em] text-xs uppercase">IDENTIFIER: THE_ARCHITECT</p>
+<h1 class="font-headline text-5xl md:text-7xl font-bold leading-tight tracking-tight text-on-surface">
+                        WEAVING <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">DIGITAL VOIDS</span>
+</h1>
+</div>
+<div class="space-y-6 text-on-surface-variant text-lg leading-relaxed max-w-2xl">
+<p>
+                        In the silent expanse between the hardware and the human, I build interfaces that breathe. My philosophy is rooted in 
+                        <span class="text-on-primary-fixed-variant bg-primary/20 px-2 rounded">intentional asymmetry</span> and the rejection of traditional constraints.
+                    </p>
+<p>
+                        Technology shouldn't just solve problems; it should create atmospheric resonance. Every line of code is a coordinate in a larger constellation of user experience.
+                    </p>
+</div>
+<div class="flex gap-6 pt-4">
+<button class="px-8 py-3 bg-gradient-to-r from-primary-container to-primary rounded-full text-on-primary font-headline font-bold uppercase tracking-widest text-sm hover:scale-105 transition-transform">
+                        INITIALIZE_LINK
+                    </button>
+<button class="px-8 py-3 border border-outline-variant/30 rounded-full font-headline font-medium uppercase tracking-widest text-sm hover:border-secondary hover:text-secondary transition-all">
+                        VIEW_RECORDS
+                    </button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-square glass-panel rounded-full overflow-hidden p-2 shadow-[0_0_80px_rgba(124,58,237,0.15)] group">
+<img alt="Abstract architectural portrait" class="w-full h-full object-cover rounded-full opacity-80 group-hover:opacity-100 transition-opacity grayscale hover:grayscale-0" data-alt="Cinematic low-key portrait of a digital architect in a dark techwear outfit, illuminated by cold cyan neon light against a dark metallic background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhnvK02TYkkL06kwYSDpWLbSsbaMahx5CZ38fkRq9GoN0_M7NInRQibYePdbbXMcdza402nrRE1jxbaUks77tOiqgP4JxKpRGV--OPA06mFJITWgWI21Rkpwsju9z_WCVeB7BRgHFWKqN7fU9UgHACbObnkuqYGHOnJbe38zd1M_SFf-5O5yfmXq4xrFD8-vd11LzBjtdKqUFbpeES9sQ9zdtrAk3gcYgJ0_mAeXS0055hR5_3Bx7cLe6fBQgfv0X5QkyuXjNrcn4I"/>
+</div>
+<div class="absolute -bottom-8 -right-8 glass-panel p-6 rounded-xl border-l-4 border-l-secondary">
+<p class="font-label text-secondary text-[10px] tracking-widest mb-1 uppercase">CURRENT_COORDINATES</p>
+<p class="font-headline font-bold text-xl">EDGE_STATION_09</p>
+</div>
+</div>
+</section>
+<!-- Philosophy Section: Bento Grid -->
+<section class="max-w-6xl mx-auto mb-32">
+<div class="mb-12 flex items-end justify-between border-b border-outline-variant/10 pb-6">
+<h2 class="font-headline text-4xl font-light uppercase tracking-tighter">TECHNICAL_ETHOS</h2>
+<span class="font-label text-outline text-[10px] tracking-widest">VER: 4.0.1</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-auto md:h-[600px]">
+<!-- Principle 1 -->
+<div class="md:col-span-2 glass-panel p-10 flex flex-col justify-end group hover:bg-white/5 transition-all">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">dynamic_form</span>
+<h3 class="font-headline text-2xl font-bold mb-4 uppercase tracking-wide">Dynamic Fluidity</h3>
+<p class="text-on-surface-variant font-body">Interfaces that adapt like liquid mercury. My systems prioritize responsive logic that feels organic rather than mechanical.</p>
+</div>
+<!-- Principle 2 -->
+<div class="md:col-span-1 glass-panel p-8 flex flex-col items-center justify-center text-center">
+<div class="w-16 h-16 rounded-full border-2 border-dashed border-secondary mb-4 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">database</span>
+</div>
+<h4 class="font-label text-xs font-bold uppercase mb-2">Immutable_Data</h4>
+<p class="text-[10px] text-outline font-label uppercase tracking-widest">Security as a default, not a feature.</p>
+</div>
+<!-- Principle 3 -->
+<div class="md:col-span-1 glass-panel p-8 relative overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-br from-tertiary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="font-label text-[10px] text-tertiary uppercase tracking-widest mb-4 block">AESTHETIC_REDUCTION</span>
+<p class="text-sm font-label leading-relaxed">"Perfection is attained not when there is nothing more to add, but when there is nothing left to take away."</p>
+</div>
+<!-- Principle 4 -->
+<div class="md:col-span-1 glass-panel p-8 flex flex-col justify-between">
+<h3 class="font-headline text-xl font-bold uppercase">Latent_Design</h3>
+<span class="material-symbols-outlined text-primary text-5xl">visibility_off</span>
+</div>
+<!-- Principle 5 -->
+<div class="md:col-span-3 glass-panel p-10 flex flex-col md:flex-row gap-12 items-center">
+<div class="md:w-1/3">
+<img class="rounded-lg opacity-60 border border-outline-variant/20" data-alt="Abstract 3D visualization of complex data structures and neural pathways in glowing violet and cyan lines on a pitch-black background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCElahSbv7HwtMAtRe7Uz4HemUf7RQaRgGXv81YpN2FKNJOcLPRTGXdd3dHBNbREOXgfBT-9TizA7YcCNiTL5sQaP-kVYDIl6TvBt3JnnOVx_Yr0sy4i2OB7assw2inx0SNpE7xUD-uQFNMU27QPQkkK5I8k5lZ6lia38jpKsfFcyKPZh7TQLDxQFDA6TvGXcvKPiNkPdG7nMLx3YZl3ky1KSJzNacn4IArr1rkZ11DW3SsCbI3ESwvHvchPFl1fmXRD5F7HpI50VK4"/>
+</div>
+<div class="md:w-2/3">
+<h3 class="font-headline text-2xl font-bold mb-4 uppercase">The Symbiotic Stack</h3>
+<p class="text-on-surface-variant mb-6">Bridging the gap between creative intuition and mathematical precision. I utilize Next-Gen architectures to ensure scalability without sacrificing soul.</p>
+<div class="flex gap-4">
+<span class="px-3 py-1 bg-surface-container-highest rounded font-label text-[10px] text-cyan-300">REACT.SYS</span>
+<span class="px-3 py-1 bg-surface-container-highest rounded font-label text-[10px] text-violet-300">TAILWIND.LIB</span>
+<span class="px-3 py-1 bg-surface-container-highest rounded font-label text-[10px] text-amber-300">RUST.CORE</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section: Floating Constellations -->
+<section class="max-w-6xl mx-auto mb-32 relative">
+<div class="absolute -left-24 top-0 -z-10 opacity-20 rotate-12">
+<span class="text-[200px] font-headline font-black text-outline/10 select-none">SKILLS</span>
+</div>
+<div class="text-center mb-16 space-y-4">
+<h2 class="font-headline text-4xl font-bold uppercase tracking-widest">Skill_Constellations</h2>
+<p class="font-label text-outline text-xs uppercase tracking-[0.4em]">Propulsion &amp; Navigation Systems</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<!-- Skill Capsule -->
+<div class="glass-panel p-6 rounded-full flex items-center gap-4 border-l-2 border-l-primary hover:bg-primary/5 transition-all cursor-pointer group">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary">terminal</span>
+</div>
+<div>
+<p class="font-headline font-bold text-sm">ARCH_ENG</p>
+<p class="font-label text-[9px] text-outline uppercase">Level: Core</p>
+</div>
+</div>
+<!-- Skill Capsule -->
+<div class="glass-panel p-6 rounded-full flex items-center gap-4 border-l-2 border-l-secondary hover:bg-secondary/5 transition-all cursor-pointer group">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary">palette</span>
+</div>
+<div>
+<p class="font-headline font-bold text-sm">UI_FUTURISM</p>
+<p class="font-label text-[9px] text-outline uppercase">Level: Expert</p>
+</div>
+</div>
+<!-- Skill Capsule -->
+<div class="glass-panel p-6 rounded-full flex items-center gap-4 border-l-2 border-l-tertiary hover:bg-tertiary/5 transition-all cursor-pointer group">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-tertiary">animation</span>
+</div>
+<div>
+<p class="font-headline font-bold text-sm">MOTION_VFX</p>
+<p class="font-label text-[9px] text-outline uppercase">Level: Advanced</p>
+</div>
+</div>
+<!-- Skill Capsule -->
+<div class="glass-panel p-6 rounded-full flex items-center gap-4 border-l-2 border-l-white hover:bg-white/5 transition-all cursor-pointer group">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-surface">api</span>
+</div>
+<div>
+<p class="font-headline font-bold text-sm">SYSTEM_PROTO</p>
+<p class="font-label text-[9px] text-outline uppercase">Level: Core</p>
+</div>
+</div>
+<!-- Skill Capsule -->
+<div class="glass-panel p-6 rounded-full flex items-center gap-4 border-l-2 border-l-primary hover:bg-primary/5 transition-all cursor-pointer group">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary">cloud</span>
+</div>
+<div>
+<p class="font-headline font-bold text-sm">DEPLOY_OPS</p>
+<p class="font-label text-[9px] text-outline uppercase">Level: Advanced</p>
+</div>
+</div>
+<!-- Skill Capsule -->
+<div class="glass-panel p-6 rounded-full flex items-center gap-4 border-l-2 border-l-secondary hover:bg-secondary/5 transition-all cursor-pointer group">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary">token</span>
+</div>
+<div>
+<p class="font-headline font-bold text-sm">WEB3_WEBGL</p>
+<p class="font-label text-[9px] text-outline uppercase">Level: Specialized</p>
+</div>
+</div>
+<!-- Skill Capsule -->
+<div class="glass-panel p-6 rounded-full flex items-center gap-4 border-l-2 border-l-tertiary hover:bg-tertiary/5 transition-all cursor-pointer group">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-tertiary">query_stats</span>
+</div>
+<div>
+<p class="font-headline font-bold text-sm">ALGO_LOGIC</p>
+<p class="font-label text-[9px] text-outline uppercase">Level: Core</p>
+</div>
+</div>
+<!-- Skill Capsule -->
+<div class="glass-panel p-6 rounded-full flex items-center gap-4 border-l-2 border-l-primary hover:bg-primary/5 transition-all cursor-pointer group">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary">architecture</span>
+</div>
+<div>
+<p class="font-headline font-bold text-sm">CAD_MODEL</p>
+<p class="font-label text-[9px] text-outline uppercase">Level: Advanced</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA: Transmission -->
+<section class="max-w-4xl mx-auto py-24 text-center glass-panel rounded-3xl relative overflow-hidden">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-1 bg-gradient-to-r from-transparent via-secondary to-transparent"></div>
+<div class="relative z-10 space-y-8 p-8 md:p-16">
+<h2 class="font-headline text-4xl font-bold uppercase tracking-[0.2em]">Ready for Transmission?</h2>
+<p class="font-body text-on-surface-variant max-w-xl mx-auto text-lg italic">
+                    "The universe is under no obligation to make sense to you. My mission is to ensure the interface does."
+                </p>
+<div class="flex flex-col md:flex-row justify-center gap-6 pt-4">
+<div class="flex items-center gap-3 glass-panel px-6 py-3 rounded-xl border border-outline-variant/20">
+<span class="material-symbols-outlined text-secondary">alternate_email</span>
+<span class="font-label text-sm uppercase tracking-widest">nexus@nebula_os.net</span>
+</div>
+<div class="flex items-center gap-3 glass-panel px-6 py-3 rounded-xl border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary">satellite_alt</span>
+<span class="font-label text-sm uppercase tracking-widest">SAT_NET: 0x82...A4</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full flex flex-col md:flex-row justify-between items-center px-12 gap-6 pb-12 bg-transparent">
+<div class="flex items-center gap-2">
+<span class="text-violet-400 font-bold font-headline">NEBULA_OS</span>
+<span class="font-label text-[10px] tracking-widest uppercase text-slate-500">© 2142 CELESTIAL_NEXUS_ESTATE</span>
+</div>
+<div class="flex gap-8">
+<a class="font-label text-[10px] tracking-widest uppercase text-slate-500 hover:text-amber-400 transition-all hover:tracking-[0.3em]" href="#">TERMINAL</a>
+<a class="font-label text-[10px] tracking-widest uppercase text-cyan-300 hover:text-amber-400 transition-all hover:tracking-[0.3em]" href="#">COORDINATES</a>
+<a class="font-label text-[10px] tracking-widest uppercase text-slate-500 hover:text-amber-400 transition-all hover:tracking-[0.3em]" href="#">SIGNAL_LOG</a>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-slate-600 text-sm">wifi_tethering</span>
+<span class="material-symbols-outlined text-slate-600 text-sm">security</span>
+<span class="material-symbols-outlined text-slate-600 text-sm">emergency_home</span>
+</div>
+</footer>
+</body></html>

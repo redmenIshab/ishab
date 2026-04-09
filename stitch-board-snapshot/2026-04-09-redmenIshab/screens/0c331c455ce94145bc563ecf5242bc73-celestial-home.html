@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NEBULA_OS // Developer Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&amp;family=Be+Vietnam+Pro:wght@300;400;500&amp;family=Fira+Code:wght@400;500&amp;family=Orbitron:wght@400;700;900&amp;family=Outfit:wght@300;400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#232a36",
+                    "on-secondary": "#00363e",
+                    "on-primary-container": "#ede0ff",
+                    "on-background": "#dce3f2",
+                    "on-primary-fixed-variant": "#5a00c6",
+                    "surface-container": "#19202b",
+                    "secondary-fixed-dim": "#2fd9f4",
+                    "inverse-surface": "#dce3f2",
+                    "surface-tint": "#d2bbff",
+                    "on-surface": "#dce3f2",
+                    "outline-variant": "#4a4455",
+                    "primary-fixed-dim": "#d2bbff",
+                    "tertiary": "#ffb95f",
+                    "on-primary": "#3f008e",
+                    "error-container": "#93000a",
+                    "surface-bright": "#323a46",
+                    "tertiary-fixed-dim": "#ffb95f",
+                    "outline": "#958da1",
+                    "on-error": "#690005",
+                    "background": "#0c141e",
+                    "secondary-fixed": "#a2eeff",
+                    "primary-fixed": "#eaddff",
+                    "on-secondary-container": "#00515d",
+                    "on-primary-fixed": "#25005a",
+                    "primary": "#d2bbff",
+                    "inverse-primary": "#732ee4",
+                    "surface-container-highest": "#2e3541",
+                    "surface": "#0c141e",
+                    "on-tertiary-container": "#ffe1c0",
+                    "on-surface-variant": "#ccc3d8",
+                    "on-tertiary-fixed": "#2a1700",
+                    "error": "#ffb4ab",
+                    "surface-variant": "#2e3541",
+                    "inverse-on-surface": "#29313c",
+                    "on-error-container": "#ffdad6",
+                    "secondary": "#5de6ff",
+                    "tertiary-container": "#905b00",
+                    "on-secondary-fixed": "#001f25",
+                    "on-secondary-fixed-variant": "#004e5a",
+                    "tertiary-fixed": "#ffddb8",
+                    "on-tertiary": "#472a00",
+                    "secondary-container": "#00cbe6",
+                    "surface-container-low": "#151c27",
+                    "surface-container-lowest": "#070e19",
+                    "primary-container": "#7c3aed",
+                    "surface-dim": "#0c141e",
+                    "on-tertiary-fixed-variant": "#653e00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Outfit", "Be Vietnam Pro"],
+                    "label": ["Fira Code"],
+                    "display": ["Orbitron"]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        body {
+            background-color: #0c141e;
+            overflow-x: hidden;
+        }
+        .glass-panel {
+            background: rgba(25, 32, 43, 0.6);
+            backdrop-filter: blur(20px) saturate(150%);
+        }
+        .starfield {
+            background-image: 
+                radial-gradient(1px 1px at 20px 30px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 40px 70px, #fff, rgba(0,0,0,0)),
+                radial-gradient(1.5px 1.5px at 50px 160px, #d2bbff, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 80px 120px, #fff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 150px 190px, #5de6ff, rgba(0,0,0,0));
+            background-repeat: repeat;
+            background-size: 250px 250px;
+        }
+        .corona-glow {
+            filter: blur(120px);
+            background: radial-gradient(circle, rgba(255,185,95,0.15) 0%, rgba(255,185,95,0) 70%);
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(210, 187, 255, 0.5), 0 0 40px rgba(93, 230, 255, 0.2);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body text-on-background selection:bg-secondary/30 selection:text-secondary">
+<!-- Solar Corona Glow -->
+<div class="fixed top-[-10%] right-[-10%] w-[60vw] h-[60vw] corona-glow pointer-events-none z-0"></div>
+<div class="fixed bottom-[-20%] left-[-10%] w-[50vw] h-[50vw] bg-primary/5 blur-[120px] pointer-events-none z-0"></div>
+<!-- Starfield Background -->
+<div class="fixed inset-0 starfield opacity-40 pointer-events-none z-0"></div>
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-8 h-20 max-w-[100vw] bg-[#19202b]/60 backdrop-blur-xl shadow-[0_0_40px_rgba(124,58,237,0.08)]">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-violet-400 dark:text-violet-300">rocket_launch</span>
+<span class="font-['Space_Grotesk'] tracking-[0.1em] uppercase text-2xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-cyan-400 drop-shadow-[0_0_10px_rgba(124,58,237,0.5)]">NEBULA_OS</span>
+</div>
+<nav class="hidden md:flex gap-10">
+<a class="font-label text-[12px] tracking-[0.2em] text-cyan-400 font-bold border-b-2 border-cyan-400 pb-1" href="#">TERMINAL</a>
+<a class="font-label text-[12px] tracking-[0.2em] text-slate-400 hover:text-violet-300 transition-colors duration-500" href="#">DISCOVERIES</a>
+<a class="font-label text-[12px] tracking-[0.2em] text-slate-400 hover:text-violet-300 transition-colors duration-500" href="#">SIGNALS</a>
+</nav>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-violet-400 dark:text-violet-300 cursor-pointer hover:bg-white/5 p-2 rounded-full transition-all">menu</span>
+</div>
+</header>
+<main class="relative z-10 pt-32 px-6 md:px-12 lg:px-24">
+<!-- Hero Section -->
+<section class="min-h-[751px] flex flex-col justify-center items-start relative mb-24">
+<div class="w-full max-w-7xl">
+<div class="flex items-center gap-4 mb-6 opacity-80">
+<span class="h-[1px] w-12 bg-secondary"></span>
+<span class="font-label text-[10px] tracking-[0.4em] uppercase text-secondary">Aether Interface 4.2</span>
+</div>
+<h1 class="font-display text-[12vw] md:text-[8vw] font-black leading-none mb-4 text-glow tracking-tighter">
+<span class="block text-primary">ELARA</span>
+<span class="block text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary-fixed-dim translate-x-[5%] md:translate-x-[10%]">VOX</span>
+</h1>
+<div class="mt-12 flex flex-col md:flex-row items-start md:items-end gap-8 md:gap-24">
+<p class="max-w-md text-lg md:text-xl text-on-surface-variant leading-relaxed font-light">
+                        Architecting digital ecosystems at the intersection of <span class="text-secondary font-medium">quantum logic</span> and <span class="text-tertiary font-medium">cinematic aesthetics</span>.
+                    </p>
+<div class="flex flex-col gap-4">
+<div class="flex gap-4">
+<button class="px-8 py-4 bg-gradient-to-r from-primary-container to-primary text-on-primary font-label text-xs tracking-widest uppercase font-bold rounded-sm shadow-lg shadow-primary/20 hover:scale-105 transition-transform">
+                                Initiate Signal
+                            </button>
+<button class="px-8 py-4 border border-outline-variant/30 text-on-surface font-label text-xs tracking-widest uppercase hover:border-secondary hover:text-secondary transition-all">
+                                Protocol Log
+                            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Absolute decorative elements -->
+<div class="absolute right-0 bottom-0 hidden lg:block opacity-20 hover:opacity-50 transition-opacity">
+<div class="w-[300px] h-[300px] border-l border-b border-outline-variant/30 relative">
+<div class="absolute bottom-4 left-4 font-label text-[10px] tracking-widest uppercase">Coord: 45.2 // 10.9</div>
+<div class="absolute -top-1 -right-1 w-2 h-2 bg-secondary"></div>
+</div>
+</div>
+</section>
+<!-- Featured Discovery Section -->
+<section class="mb-32">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tight text-on-primary-container mb-4">Featured Discovery</h2>
+<p class="font-label text-xs tracking-[0.3em] uppercase text-outline">Project Code: NEON_DRIFT</p>
+</div>
+<div class="hidden md:block">
+<span class="material-symbols-outlined text-4xl text-secondary opacity-30">deployed_code</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-0 group">
+<!-- Project Image -->
+<div class="lg:col-span-7 relative h-[400px] md:h-[600px] overflow-hidden rounded-tl-xl rounded-bl-xl md:rounded-bl-none">
+<img alt="Project Neon Drift" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="Futuristic neon city interface with glowing blue and purple data visualizations overlaying a dark cinematic cityscape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDf2O_pm3uXq0_3Mu0Ptx_9wgeAthrh1fP8flx9ELFeoOyYgEr3bQLEfAaJldXxQRH-9XC2r189pFTr03w2UWaEVkkywmr5bzVT-MX3nfpfN3tpmM47TEv4zrLZMj2LS37CLLPWsMsOwwxywio1s1qUA7Gc9ahJfTUfcQaKHndK2dbxhUZ9hcWnSJG7o5G04XD4Y5vcItLv2FEbjyEAVojjHWQT9g08Iepe-0_2D1qAZT8UmYCNebZERvoZzTxyy4HLr2nCn7Xkbwij"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-transparent to-transparent opacity-60"></div>
+</div>
+<!-- Project Details -->
+<div class="lg:col-span-5 glass-panel p-8 md:p-16 flex flex-col justify-center border-l-0 border-outline-variant/10 rounded-br-xl rounded-tr-xl md:rounded-tr-none lg:-ml-24 relative z-20">
+<div class="mb-6">
+<span class="px-3 py-1 bg-secondary-container/20 text-secondary-fixed-dim font-label text-[10px] tracking-widest rounded-full border border-secondary/20 uppercase">React Engine</span>
+</div>
+<h3 class="font-headline text-3xl md:text-4xl font-bold mb-6 text-on-surface">Hyper-Visual Analytics</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8 text-lg">
+                        A real-time data visualization framework built for deep-space telemetry. Leverages WebGL and custom shader pipelines to render 1.2M data points with zero latency.
+                    </p>
+<div class="flex flex-wrap gap-6 mb-10 opacity-60">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">precision_manufacturing</span>
+<span class="font-label text-[10px] tracking-widest uppercase">Shaders</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">database</span>
+<span class="font-label text-[10px] tracking-widest uppercase">GraphQL</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">speed</span>
+<span class="font-label text-[10px] tracking-widest uppercase">Performance</span>
+</div>
+</div>
+<a class="inline-flex items-center gap-3 text-secondary group-hover:text-tertiary transition-colors font-label text-xs tracking-widest uppercase" href="#">
+                        View Manifest <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Bento Grid Skills / Stats -->
+<section class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-32">
+<div class="md:col-span-2 glass-panel p-10 border border-outline-variant/10 flex flex-col justify-between group hover:bg-white/5 transition-all">
+<span class="material-symbols-outlined text-secondary text-3xl mb-12">terminal</span>
+<div>
+<h4 class="font-headline text-2xl font-bold mb-2">Technical Prowess</h4>
+<p class="text-on-surface-variant font-light">TypeScript, Rust, Three.js, and Distributed Systems.</p>
+</div>
+</div>
+<div class="glass-panel p-10 border border-outline-variant/10 flex flex-col items-center justify-center text-center group hover:bg-white/5 transition-all">
+<div class="text-5xl font-display font-black text-tertiary mb-2 text-glow">09</div>
+<div class="font-label text-[10px] tracking-widest uppercase text-outline">Years Active</div>
+</div>
+<div class="glass-panel p-10 border border-outline-variant/10 flex flex-col items-center justify-center text-center group hover:bg-white/5 transition-all">
+<div class="text-5xl font-display font-black text-secondary mb-2 text-glow">42</div>
+<div class="font-label text-[10px] tracking-widest uppercase text-outline">Modules Deployed</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full flex flex-col md:flex-row justify-between items-center px-12 gap-6 pb-12 bg-transparent">
+<div class="font-['Fira_Code'] text-[10px] tracking-widest uppercase text-slate-500">
+            © 2142 CELESTIAL_NEXUS_ESTATE
+        </div>
+<div class="flex gap-12">
+<a class="font-['Fira_Code'] text-[10px] tracking-widest uppercase text-slate-500 hover:text-amber-400 transition-all hover:tracking-[0.3em]" href="#">TERMINAL</a>
+<a class="font-['Fira_Code'] text-[10px] tracking-widest uppercase text-slate-500 hover:text-amber-400 transition-all hover:tracking-[0.3em]" href="#">COORDINATES</a>
+<a class="font-['Fira_Code'] text-[10px] tracking-widest uppercase text-slate-500 hover:text-amber-400 transition-all hover:tracking-[0.3em]" href="#">SIGNAL_LOG</a>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-['Fira_Code'] text-[10px] tracking-widest uppercase text-cyan-500">System Status:</span>
+<span class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_#5de6ff]"></span>
+<span class="font-['Fira_Code'] text-[10px] tracking-widest uppercase text-secondary">Operational</span>
+</div>
+</footer>
+<!-- Nebula Tracker Decorative Cursor Glow (CSS Only) -->
+<div class="fixed top-0 left-0 w-full h-full pointer-events-none z-[-1] opacity-30">
+<div class="absolute top-[10%] left-[20%] w-[400px] h-[400px] bg-primary/20 blur-[150px] rounded-full"></div>
+<div class="absolute bottom-[20%] right-[10%] w-[300px] h-[300px] bg-secondary/10 blur-[100px] rounded-full"></div>
+</div>
+</body></html>

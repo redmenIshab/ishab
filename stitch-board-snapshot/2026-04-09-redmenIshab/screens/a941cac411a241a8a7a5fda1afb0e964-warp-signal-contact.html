@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;family=Fira+Code:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#a2eeff",
+                    "on-secondary": "#00363e",
+                    "inverse-on-surface": "#29313c",
+                    "secondary-container": "#00cbe6",
+                    "on-error": "#690005",
+                    "surface-container-high": "#232a36",
+                    "tertiary-fixed-dim": "#ffb95f",
+                    "surface-tint": "#d2bbff",
+                    "secondary": "#5de6ff",
+                    "tertiary": "#ffb95f",
+                    "on-secondary-fixed-variant": "#004e5a",
+                    "tertiary-fixed": "#ffddb8",
+                    "surface-bright": "#323a46",
+                    "primary-container": "#7c3aed",
+                    "on-primary-container": "#ede0ff",
+                    "secondary-fixed-dim": "#2fd9f4",
+                    "surface-dim": "#0c141e",
+                    "surface-container-highest": "#2e3541",
+                    "on-primary-fixed-variant": "#5a00c6",
+                    "surface-variant": "#2e3541",
+                    "on-tertiary": "#472a00",
+                    "on-surface": "#dce3f2",
+                    "on-secondary-fixed": "#001f25",
+                    "primary-fixed-dim": "#d2bbff",
+                    "primary": "#d2bbff",
+                    "inverse-surface": "#dce3f2",
+                    "inverse-primary": "#732ee4",
+                    "surface-container": "#19202b",
+                    "surface": "#0c141e",
+                    "on-tertiary-fixed-variant": "#653e00",
+                    "on-secondary-container": "#00515d",
+                    "tertiary-container": "#905b00",
+                    "on-primary": "#3f008e",
+                    "on-tertiary-fixed": "#2a1700",
+                    "surface-container-low": "#151c27",
+                    "error": "#ffb4ab",
+                    "on-tertiary-container": "#ffe1c0",
+                    "on-background": "#dce3f2",
+                    "on-surface-variant": "#ccc3d8",
+                    "background": "#0c141e",
+                    "surface-container-lowest": "#070e19",
+                    "outline-variant": "#4a4455",
+                    "error-container": "#93000a",
+                    "primary-fixed": "#eaddff",
+                    "on-primary-fixed": "#25005a",
+                    "on-error-container": "#ffdad6",
+                    "outline": "#958da1"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Be Vietnam Pro"],
+                    "label": ["Fira Code"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #070e19;
+            background-image: 
+                radial-gradient(circle at 2px 2px, rgba(255,255,255,0.05) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+        .nebula-glow {
+            filter: blur(120px);
+            opacity: 0.15;
+            pointer-events: none;
+        }
+        .glass-panel {
+            background: rgba(25, 32, 43, 0.6);
+            backdrop-filter: blur(20px) saturate(150%);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body text-on-surface selection:bg-primary/30 min-h-screen flex flex-col overflow-x-hidden">
+<!-- Background Accents -->
+<div class="fixed inset-0 -z-10 overflow-hidden">
+<div class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] rounded-full bg-primary nebula-glow"></div>
+<div class="absolute bottom-[0%] right-[-5%] w-[40%] h-[40%] rounded-full bg-secondary nebula-glow"></div>
+</div>
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-8 h-20 max-w-[100vw] bg-[#19202b]/60 backdrop-blur-xl shadow-[0_0_40px_rgba(124,58,237,0.08)]">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-violet-400">rocket_launch</span>
+<h1 class="text-2xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-cyan-400 drop-shadow-[0_0_10px_rgba(124,58,237,0.5)] font-headline uppercase">NEBULA_OS</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8 font-label text-[10px] tracking-widest">
+<a class="text-slate-400 hover:text-violet-300 transition-colors duration-500" href="#">TERMINAL</a>
+<a class="text-slate-400 hover:text-violet-300 transition-colors duration-500" href="#">COORDINATES</a>
+<a class="text-cyan-400 font-bold border-b-2 border-cyan-400 pb-1" href="#">SIGNAL_LOG</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-violet-400 p-2 hover:bg-white/5 rounded-full transition-all">menu</button>
+</div>
+</header>
+<main class="flex-grow pt-32 pb-20 px-6 max-w-7xl mx-auto w-full relative">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Hero Header Section -->
+<div class="lg:col-span-12 mb-12">
+<p class="font-label text-secondary tracking-[0.4em] text-xs mb-4 uppercase">Direct Link Established</p>
+<h2 class="font-headline text-6xl md:text-8xl font-bold tracking-tighter text-on-surface leading-none">
+                    SIGNAL <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">TRANSMISSION</span>
+</h2>
+<div class="h-1 w-24 bg-gradient-to-r from-primary to-transparent mt-8"></div>
+</div>
+<!-- Contact Form Area -->
+<div class="lg:col-span-7">
+<div class="glass-panel p-8 md:p-12 rounded-xl relative border border-outline-variant/10">
+<div class="absolute top-0 right-0 p-4 font-label text-[10px] text-outline/40">ENCRYPTION: AES-256</div>
+<form class="space-y-10">
+<div class="relative group">
+<input class="peer w-full bg-transparent border-0 border-b border-outline-variant/30 focus:border-secondary focus:ring-0 transition-all py-4 text-on-surface placeholder-transparent font-body" id="subject" placeholder=" " type="text"/>
+<label class="absolute left-0 top-4 text-outline/60 uppercase font-label text-[10px] tracking-widest transition-all peer-focus:-top-4 peer-focus:text-secondary peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-secondary" for="subject">Source Identity</label>
+</div>
+<div class="relative group">
+<input class="peer w-full bg-transparent border-0 border-b border-outline-variant/30 focus:border-secondary focus:ring-0 transition-all py-4 text-on-surface placeholder-transparent font-body" id="email" placeholder=" " type="email"/>
+<label class="absolute left-0 top-4 text-outline/60 uppercase font-label text-[10px] tracking-widest transition-all peer-focus:-top-4 peer-focus:text-secondary peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-secondary" for="email">Return Frequency (Email)</label>
+</div>
+<div class="relative group">
+<textarea class="peer w-full bg-transparent border-0 border-b border-outline-variant/30 focus:border-secondary focus:ring-0 transition-all py-4 text-on-surface placeholder-transparent font-body resize-none" id="message" placeholder=" " rows="4"></textarea>
+<label class="absolute left-0 top-4 text-outline/60 uppercase font-label text-[10px] tracking-widest transition-all peer-focus:-top-4 peer-focus:text-secondary peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-secondary" for="message">Message Payload</label>
+</div>
+<div class="pt-6">
+<button class="group relative inline-flex items-center justify-center px-10 py-4 font-label text-xs tracking-widest uppercase text-on-primary bg-gradient-to-r from-primary-container to-primary overflow-hidden rounded-sm transition-all hover:scale-105 active:scale-95 shadow-[0_0_30px_rgba(124,58,237,0.4)]" type="submit">
+<span class="relative z-10 flex items-center gap-3">
+                                    Transmit
+                                    <span class="material-symbols-outlined text-sm">send</span>
+</span>
+<div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- Sidebar Details -->
+<div class="lg:col-span-5 space-y-8">
+<div class="glass-panel p-8 rounded-xl border border-outline-variant/10">
+<h3 class="font-headline text-xl font-bold mb-6 text-primary">COMM_CHANNELS</h3>
+<ul class="space-y-6 font-label">
+<li class="flex items-center gap-4 group">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-secondary border border-outline-variant/20 group-hover:border-secondary transition-colors">
+<span class="material-symbols-outlined text-lg">alternate_email</span>
+</div>
+<div>
+<p class="text-[10px] text-outline/60 uppercase">E-Mail Address</p>
+<a class="text-sm tracking-tight text-on-surface hover:text-secondary transition-colors" href="mailto:nexus@celestial.dev">nexus@celestial.dev</a>
+</div>
+</li>
+<li class="flex items-center gap-4 group">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-secondary border border-outline-variant/20 group-hover:border-secondary transition-colors">
+<span class="material-symbols-outlined text-lg">hub</span>
+</div>
+<div>
+<p class="text-[10px] text-outline/60 uppercase">GitHub Repository</p>
+<a class="text-sm tracking-tight text-on-surface hover:text-secondary transition-colors" href="#">github.com/celestial_void</a>
+</div>
+</li>
+<li class="flex items-center gap-4 group">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-secondary border border-outline-variant/20 group-hover:border-secondary transition-colors">
+<span class="material-symbols-outlined text-lg">share</span>
+</div>
+<div>
+<p class="text-[10px] text-outline/60 uppercase">Network Presence</p>
+<div class="flex gap-4 mt-1">
+<a class="text-xs text-on-surface-variant hover:text-tertiary transition-colors" href="#">LINKEDIN</a>
+<span class="text-outline/20">/</span>
+<a class="text-xs text-on-surface-variant hover:text-tertiary transition-colors" href="#">TWITTER_X</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="glass-panel p-8 rounded-xl border border-outline-variant/10 overflow-hidden relative group">
+<img class="absolute inset-0 w-full h-full object-cover opacity-20 grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Stylized futuristic 3D wireframe map of a city in neon cyan and dark obsidian colors" data-location="Tokyo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnFjQYlUIQvFMONsu-VI9fr4yeBmVU5SjEKThuQX3lCPHvbjbj_cI9stNdCImDNh_bZ1SikuS9qXvariVt7HKUr_iR1Oz2Cjk2_EAG0CEHbM95sYxDCO5lHvj9lggCHsNBhTKM0_RrGWT9z2GpJ2Cqk4QtHqn7V1jzR455iCkldrszBpdq2JSx63MG2CZtillCjlLss51DGeRNf_AMVQMjbdGhA357GBGQ-YBdR0i7hgUrVXO_5dHTJwIsMEHMRzxarBOwxcogKQOe"/>
+<div class="relative z-10">
+<p class="font-label text-[10px] text-secondary tracking-widest uppercase mb-2">Current Coordinates</p>
+<h4 class="font-headline text-2xl font-bold">SECTOR_7 / TOKYO</h4>
+<p class="text-xs text-outline/70 mt-2 font-label">35.6762° N, 139.6503° E</p>
+</div>
+</div>
+<div class="flex items-center gap-4 px-4 py-3 bg-surface-container-low/40 rounded-full w-fit border border-outline-variant/10">
+<div class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</div>
+<span class="font-label text-[10px] tracking-[0.2em] text-secondary uppercase">System Status: Operational</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full flex flex-col md:flex-row justify-between items-center px-12 gap-6 pb-12 bg-transparent">
+<div class="flex items-center gap-2">
+<span class="text-violet-400 font-bold font-headline text-sm uppercase">NEBULA_OS</span>
+<span class="text-slate-500 font-label text-[10px]">© 2142 CELESTIAL_NEXUS_ESTATE</span>
+</div>
+<div class="flex gap-8">
+<a class="font-label text-[10px] tracking-widest uppercase text-slate-500 hover:text-amber-400 hover:tracking-[0.3em] transition-all duration-700" href="#">TERMINAL</a>
+<a class="font-label text-[10px] tracking-widest uppercase text-slate-500 hover:text-amber-400 hover:tracking-[0.3em] transition-all duration-700" href="#">COORDINATES</a>
+<a class="font-label text-[10px] tracking-widest uppercase text-cyan-300 hover:text-amber-400 hover:tracking-[0.3em] transition-all duration-700" href="#">SIGNAL_LOG</a>
+</div>
+</footer>
+</body></html>

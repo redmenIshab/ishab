@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Be+Vietnam+Pro:wght@300;400;500&amp;family=Fira+Code:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#232a36",
+                    "on-secondary": "#00363e",
+                    "on-primary-container": "#ede0ff",
+                    "on-background": "#dce3f2",
+                    "on-primary-fixed-variant": "#5a00c6",
+                    "surface-container": "#19202b",
+                    "secondary-fixed-dim": "#2fd9f4",
+                    "inverse-surface": "#dce3f2",
+                    "surface-tint": "#d2bbff",
+                    "on-surface": "#dce3f2",
+                    "outline-variant": "#4a4455",
+                    "primary-fixed-dim": "#d2bbff",
+                    "tertiary": "#ffb95f",
+                    "on-primary": "#3f008e",
+                    "error-container": "#93000a",
+                    "surface-bright": "#323a46",
+                    "tertiary-fixed-dim": "#ffb95f",
+                    "outline": "#958da1",
+                    "on-error": "#690005",
+                    "background": "#0c141e",
+                    "secondary-fixed": "#a2eeff",
+                    "primary-fixed": "#eaddff",
+                    "on-secondary-container": "#00515d",
+                    "on-primary-fixed": "#25005a",
+                    "primary": "#d2bbff",
+                    "inverse-primary": "#732ee4",
+                    "surface-container-highest": "#2e3541",
+                    "surface": "#0c141e",
+                    "on-tertiary-container": "#ffe1c0",
+                    "on-surface-variant": "#ccc3d8",
+                    "on-tertiary-fixed": "#2a1700",
+                    "error": "#ffb4ab",
+                    "surface-variant": "#2e3541",
+                    "inverse-on-surface": "#29313c",
+                    "on-error-container": "#ffdad6",
+                    "secondary": "#5de6ff",
+                    "tertiary-container": "#905b00",
+                    "on-secondary-fixed": "#001f25",
+                    "on-secondary-fixed-variant": "#004e5a",
+                    "tertiary-fixed": "#ffddb8",
+                    "on-tertiary": "#472a00",
+                    "secondary-container": "#00cbe6",
+                    "surface-container-low": "#151c27",
+                    "surface-container-lowest": "#070e19",
+                    "primary-container": "#7c3aed",
+                    "surface-dim": "#0c141e",
+                    "on-tertiary-fixed-variant": "#653e00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Be Vietnam Pro"],
+                    "label": ["Fira Code"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #070e19;
+            overflow-x: hidden;
+        }
+        .glass-panel {
+            background: rgba(25, 32, 43, 0.6);
+            backdrop-filter: blur(20px) saturate(150%);
+        }
+        .starfield {
+            background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.05) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+        .nebula-glow {
+            background: radial-gradient(circle at center, rgba(124, 58, 237, 0.15) 0%, transparent 70%);
+        }
+        .solar-flare {
+            background: radial-gradient(circle at center, rgba(255, 185, 95, 0.1) 0%, transparent 60%);
+            filter: blur(80px);
+        }
+        .drift-animation-slow {
+            animation: drift 20s ease-in-out infinite alternate;
+        }
+        @keyframes drift {
+            from { transform: translate(0, 0); }
+            to { transform: translate(20px, -20px); }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body text-on-background selection:bg-primary/30 min-h-screen flex flex-col">
+<!-- Global Background Elements -->
+<div class="fixed inset-0 z-[-1] overflow-hidden pointer-events-none">
+<div class="absolute inset-0 starfield opacity-40"></div>
+<div class="absolute top-[-10%] right-[-10%] w-[600px] h-[600px] solar-flare"></div>
+<div class="absolute bottom-[-20%] left-[-10%] w-[800px] h-[800px] nebula-glow drift-animation-slow"></div>
+</div>
+<!-- Navigation Shell (TopAppBar) -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-8 h-20 max-w-[100vw] bg-[#19202b]/60 backdrop-blur-xl shadow-[0_0_40px_rgba(124,58,237,0.08)]">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-violet-400" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+<span class="text-2xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-cyan-400 drop-shadow-[0_0_10px_rgba(124,58,237,0.5)] font-['Space_Grotesk'] uppercase tracking-[0.1em]">NEBULA_OS</span>
+</div>
+<nav class="hidden md:flex gap-12 text-sm font-label tracking-widest">
+<a class="text-slate-400 hover:text-violet-300 transition-colors duration-500" href="#">TERMINAL</a>
+<a class="text-slate-400 hover:text-violet-300 transition-colors duration-500" href="#">COORDINATES</a>
+<a class="text-cyan-400 font-bold border-b-2 border-cyan-400 pb-1" href="#">ESTABLISH_CONNECTION</a>
+</nav>
+<button class="text-violet-400 hover:bg-white/5 p-2 rounded-full transition-all">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow flex items-center justify-center px-6 pt-32 pb-24 relative z-10">
+<div class="w-full max-w-5xl grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Hero Title Section -->
+<div class="lg:col-span-5 space-y-8 lg:sticky lg:top-32">
+<div>
+<h1 class="font-headline text-6xl md:text-7xl font-bold leading-tight tracking-tight mb-4">
+<span class="block text-surface-tint">ESTABLISH_</span>
+<span class="block text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary-container">CONNECTION</span>
+</h1>
+<div class="h-1 w-24 bg-gradient-to-r from-secondary to-transparent"></div>
+</div>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-md">
+                    Initiate secure transmission across the digital void. Your signal will be prioritized through the Orion relay cluster for immediate processing.
+                </p>
+<div class="space-y-6 pt-4 font-label text-[10px] tracking-[0.2em] text-outline">
+<div class="flex items-center gap-4 group">
+<div class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center group-hover:border-secondary transition-colors">
+<span class="material-symbols-outlined text-lg">router</span>
+</div>
+<div>
+<p class="text-secondary opacity-70">ENCRYPTION_PROTOCOL</p>
+<p class="text-on-surface">AES-256 BIT QUANTUM-SAFE</p>
+</div>
+</div>
+<div class="flex items-center gap-4 group">
+<div class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center group-hover:border-secondary transition-colors">
+<span class="material-symbols-outlined text-lg">hub</span>
+</div>
+<div>
+<p class="text-secondary opacity-70">SIGNAL_ROUTING</p>
+<p class="text-on-surface">VOYAGER-6 RELAY HUB</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Contact Form Section -->
+<div class="lg:col-span-7 w-full">
+<div class="glass-panel p-8 md:p-12 rounded-xl relative overflow-hidden group">
+<!-- Subtle Interior Glow -->
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-primary/10 blur-[80px] rounded-full pointer-events-none"></div>
+<form action="#" class="space-y-8 relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2 group/input">
+<label class="font-label text-[10px] tracking-widest text-secondary group-focus-within/input:text-primary transition-colors">SENDER_ID</label>
+<input class="w-full bg-transparent border-b border-outline-variant py-3 focus:outline-none focus:border-secondary transition-all placeholder:text-outline/40 text-on-surface" placeholder="John_Doe_Alpha" type="text"/>
+</div>
+<div class="space-y-2 group/input">
+<label class="font-label text-[10px] tracking-widest text-secondary group-focus-within/input:text-primary transition-colors">SIGNAL_ORIGIN</label>
+<input class="w-full bg-transparent border-b border-outline-variant py-3 focus:outline-none focus:border-secondary transition-all placeholder:text-outline/40 text-on-surface" placeholder="identity@nexus.void" type="email"/>
+</div>
+</div>
+<div class="space-y-2 group/input">
+<label class="font-label text-[10px] tracking-widest text-secondary group-focus-within/input:text-primary transition-colors">TRANSMISSION_SUBJECT</label>
+<select class="w-full bg-transparent border-b border-outline-variant py-3 focus:outline-none focus:border-secondary transition-all text-on-surface appearance-none cursor-pointer">
+<option class="bg-surface-container">PROJECT_COLLABORATION</option>
+<option class="bg-surface-container">TECHNICAL_INQUIRY</option>
+<option class="bg-surface-container">SYSTEM_FEEDBACK</option>
+<option class="bg-surface-container">GENERAL_SIGNAL</option>
+</select>
+</div>
+<div class="space-y-2 group/input">
+<label class="font-label text-[10px] tracking-widest text-secondary group-focus-within/input:text-primary transition-colors">ENCODED_MESSAGE</label>
+<textarea class="w-full bg-transparent border-b border-outline-variant py-3 focus:outline-none focus:border-secondary transition-all placeholder:text-outline/40 text-on-surface resize-none" placeholder="Begin sequence input..." rows="5"></textarea>
+</div>
+<div class="flex items-center justify-between pt-6">
+<div class="hidden md:flex flex-col gap-1">
+<span class="font-label text-[9px] text-outline tracking-[0.3em]">SYSTEM_STATUS</span>
+<span class="flex items-center gap-2 font-label text-[9px] text-tertiary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary shadow-[0_0_8px_rgba(255,185,95,0.8)]"></span>
+                                    READY_TO_TRANSMIT
+                                </span>
+</div>
+<button class="relative group/btn overflow-hidden px-10 py-4 rounded-full transition-all" type="submit">
+<!-- Glowing Background -->
+<div class="absolute inset-0 bg-gradient-to-r from-primary-container to-secondary transition-transform group-hover/btn:scale-110"></div>
+<div class="absolute inset-0 bg-white opacity-0 group-hover/btn:opacity-20 transition-opacity"></div>
+<span class="relative z-10 flex items-center gap-3 font-label font-bold text-on-primary tracking-widest">
+                                    SUBMIT_TRANSMISSION
+                                    <span class="material-symbols-outlined text-lg">send</span>
+</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Secondary Cards / Bento Details -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+<div class="glass-panel p-6 rounded-lg flex items-start gap-4 hover:bg-white/5 transition-all duration-500">
+<span class="material-symbols-outlined text-tertiary">location_on</span>
+<div>
+<p class="font-label text-[10px] text-tertiary tracking-widest mb-1">STATION_COORDINATES</p>
+<p class="text-sm text-on-surface-variant font-medium">NECTOR_QUADRANT_42 / SECTOR-7G</p>
+</div>
+</div>
+<div class="glass-panel p-6 rounded-lg flex items-start gap-4 hover:bg-white/5 transition-all duration-500">
+<span class="material-symbols-outlined text-secondary">public</span>
+<div>
+<p class="font-label text-[10px] text-secondary tracking-widest mb-1">SIGNAL_UPTIME</p>
+<p class="text-sm text-on-surface-variant font-medium">99.998% INTERSTELLAR RELIABILITY</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Decorative Image Component (Orbital Visual) -->
+<div class="fixed bottom-0 right-0 w-[40vw] h-[353px] opacity-20 pointer-events-none z-0">
+<img alt="Vibrant space nebula with swirling violet and cyan gases and distant bright stars" class="w-full h-full object-cover mask-gradient" data-alt="Stunning deep space nebula with high-contrast violet and teal cosmic dust clouds and brilliant distant solar systems" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh6iPgiAm8RauMx9nlX4fGwloP6WtCJDL8AVmyGGaNWjmXC_FW1yY90KRBiAhFP22lnigv-d3w2NXJDeSNtNSv6LrV9kJtRnGV4rz3WZqpk_tJN4yypqCrM8rVxLtyda4U20OPM_hIrWHNtjceFuxBlR3v_xW0xtOXy7THkiNc966XCppN97Zc4mjq-iLyiBKdmJ4TDCPcUns5O6cfrLMvK9mAO1j9kFZ9BnHanyAfnbD9OMtowsM6oAsxKcdYJzb54qaeVWIJILdM"/>
+<style>
+            .mask-gradient {
+                mask-image: radial-gradient(circle at bottom right, black, transparent 80%);
+            }
+        </style>
+</div>
+<!-- Footer Shell -->
+<footer class="w-full flex flex-col md:flex-row justify-between items-center px-12 pb-12 pt-8 gap-6 relative z-10">
+<div class="flex items-center gap-6">
+<span class="text-violet-400 font-bold font-label text-[10px] tracking-widest uppercase">© 2142 CELESTIAL_NEXUS_ESTATE</span>
+</div>
+<div class="flex gap-8 font-['Fira_Code'] text-[10px] tracking-widest uppercase text-slate-500">
+<a class="hover:text-amber-400 transition-all hover:tracking-[0.3em]" href="#">TERMINAL</a>
+<a class="hover:text-amber-400 transition-all hover:tracking-[0.3em]" href="#">COORDINATES</a>
+<a class="text-cyan-300 transition-all hover:tracking-[0.3em]" href="#">SIGNAL_LOG</a>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_rgba(93,230,255,0.6)]"></div>
+<span class="font-label text-[8px] text-secondary tracking-[0.4em]">LINK_ESTABLISHED</span>
+</div>
+</footer>
+</body></html>

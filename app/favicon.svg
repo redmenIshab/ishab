@@ -1,0 +1,16 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" id="favicon-svg">
+          <rect width="64" height="64" rx="14" fill="#0d0a1a"/>
+          <rect width="64" height="64" rx="14" fill="#1a0a2e" opacity="0.8"/>
+          <circle cx="18" cy="14" r="1.5" fill="#9b7fd4" opacity="0.7"/>
+          <circle cx="50" cy="10" r="1" fill="#7bb8ff" opacity="0.6"/>
+          <circle cx="55" cy="22" r="1.2" fill="#fff" opacity="0.5"/>
+          <circle cx="9" cy="30" r="1" fill="#c4a0ff" opacity="0.5"/>
+          <circle cx="58" cy="45" r="1.5" fill="#9b7fd4" opacity="0.6"/>
+          <circle cx="6" cy="52" r="1" fill="#7bb8ff" opacity="0.5"/>
+          <circle cx="42" cy="8" r="1" fill="#fff" opacity="0.4"/>
+          <text x="32" y="24" font-family="'Courier New', monospace" font-size="9" font-weight="700" fill="#c084fc" text-anchor="middle" letter-spacing="2">&lt;/&gt;</text>
+          <text x="32" y="42" font-family="'Courier New', monospace" font-size="18" font-weight="800" fill="#e0d0ff" text-anchor="middle" letter-spacing="-1">RI</text>
+          <text x="32" y="55" font-family="'Courier New', monospace" font-size="6.5" font-weight="400" fill="#9b7fd4" text-anchor="middle" letter-spacing="3">dev</text>
+          <rect x="10" y="27" width="44" height="0.5" fill="#c084fc" opacity="0.25" rx="0.25"/>
+          <rect x="10" y="47" width="44" height="0.5" fill="#c084fc" opacity="0.2" rx="0.25"/>
+        </svg>

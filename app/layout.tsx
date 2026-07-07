@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Be_Vietnam_Pro, Fira_Code, Orbitron, Space_Grotesk } from "next/font/google";
+import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import resumeData from "../resumeData";
 
@@ -15,26 +15,16 @@ const resolvedSiteUrl = (() => {
   }
 })();
 
-const headingFont = Space_Grotesk({
+const displayFont = Space_Grotesk({
   variable: "--font-space-grotesk",
   subsets: ["latin"],
-});
-
-const bodyFont = Be_Vietnam_Pro({
-  variable: "--font-be-vietnam-pro",
   weight: ["300", "400", "500", "600", "700"],
-  subsets: ["latin"],
 });
 
-const labelFont = Fira_Code({
-  variable: "--font-fira-code",
-  weight: ["400", "500"],
+const monoFont = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
   subsets: ["latin"],
-});
-
-const displayFont = Orbitron({
-  variable: "--font-orbitron",
-  subsets: ["latin"],
+  weight: ["400", "500", "600"],
 });
 
 export const metadata: Metadata = {
@@ -93,7 +83,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${headingFont.variable} ${bodyFont.variable} ${labelFont.variable} ${displayFont.variable} h-full antialiased`}
+      className={`${displayFont.variable} ${monoFont.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

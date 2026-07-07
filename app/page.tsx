@@ -3,7 +3,10 @@
 import { Nav } from "./components/Nav";
 import { WireframeHero } from "./components/WireframeHero";
 import { WorkIndex } from "./components/WorkIndex";
+import { FeaturedTile } from "./components/FeaturedTile";
+import { About } from "./components/About";
 import { ExperienceIndex } from "./components/ExperienceIndex";
+import { Skills } from "./components/Skills";
 
 export default function Home() {
   return (
@@ -11,10 +14,10 @@ export default function Home() {
       <Nav />
       <WireframeHero />
       <WorkIndex />
-      <section className="featured" />
-      <section className="p-section" id="about" />
+      <FeaturedTile />
+      <About />
       <ExperienceIndex />
-      <section className="p-section" id="skills" />
+      <Skills />
       <section className="p-section" id="contact" />
     </div>
   );

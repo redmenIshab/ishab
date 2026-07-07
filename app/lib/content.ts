@@ -12,7 +12,7 @@ export const NAME_LAST = nameParts.slice(1).join(" ") || "";
 export const EMAIL = resumeData.gmailId;
 
 export const HERO_INTRO =
-  "I build full-stack products and lead the teams that ship them — a decade close to the code, from POS systems to healthcare and AI platforms.";
+  "I build full-stack products and lead the teams that ship them — six years close to the code, from POS systems to healthcare and AI platforms.";
 
 // About lead, split so the middle phrase can be rendered in the accent colour.
 export const ABOUT_LEAD_PRE = "Six years in, I still measure success like an engineer — ship, learn, iterate — but I lead people like ";

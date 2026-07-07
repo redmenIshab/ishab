@@ -1,10 +1,13 @@
+"use client";
+
 import { Nav } from "./components/Nav";
+import { WireframeHero } from "./components/WireframeHero";
 
 export default function Home() {
   return (
     <div className="p-root">
       <Nav />
-      <header className="p-hero" id="home" />
+      <WireframeHero />
       <section className="p-section" id="work" />
       <section className="featured" />
       <section className="p-section" id="about" />

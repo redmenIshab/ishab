@@ -7,6 +7,7 @@ import { FeaturedTile } from "./components/FeaturedTile";
 import { About } from "./components/About";
 import { ExperienceIndex } from "./components/ExperienceIndex";
 import { Skills } from "./components/Skills";
+import { Contact } from "./components/Contact";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
       <About />
       <ExperienceIndex />
       <Skills />
-      <section className="p-section" id="contact" />
+      <Contact />
     </div>
   );
 }
